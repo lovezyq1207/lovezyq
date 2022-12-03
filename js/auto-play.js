@@ -1,7 +1,6 @@
+contextClass =window.AudioContext= window.AudioContext ||  window.webkitAudioContext || window.mozAudioContext || window.msAudioContext;
 try {
-
-    var AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext || window.msAudioContext;
-    var context = new window.AudioContext();
+    var context = new contextClass();
     var source = null;
     var audioBuffer = null;
 
